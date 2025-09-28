@@ -8,7 +8,7 @@ while keeping subcharts reusable.
 ## Project Layout
 
 ```
-examples/wordpress-stack/
+timonel-examples/wordpress-stack/
 ├── charts/
 │   ├── mysql/
 │   │   └── chart.ts        # Timonel chart for the MySQL backend
@@ -30,7 +30,7 @@ examples/wordpress-stack/
 From the example directory run:
 
 ```bash
-cd examples/wordpress-stack
+cd timonel-examples/wordpress-stack
 tl umbrella synth
 ```
 
@@ -49,7 +49,7 @@ Inline mode copies each subchart's templates under `dist/templates/<subchart>/` 
 ## Validate with Helm
 
 ```bash
-cd examples/wordpress-stack/dist
+cd timonel-examples/wordpress-stack/dist
 helm lint .
 helm template wordpress-stack .
 ```
